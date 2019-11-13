@@ -6,9 +6,9 @@ var express = require('express'),
     mongoose = require('mongoose'),
  bodyParser = require('body-parser'),
     users = {};
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
-mongoose.connect('mongodb://192.168.2.30:27017/real',function (err) {
+mongoose.connect('mongodb://vikichat:vikichat@123@ds241895.mlab.com:41895/vikichat',function (err) {
     if (err){
         console.log(err);
     }else {
